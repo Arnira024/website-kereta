@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Kereta</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      height: 100vh;
+    }
+
+    header {
+      background-color: #0047AB;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .content {
+      display: flex;
+      height: calc(100vh - 80px);
+    }
+
+    .form-section {
+      flex: 1;
+      background: linear-gradient(to bottom, #4facfe, #00f2fe);
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    label {
+      color: white;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="time"] {
+      padding: 12px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      width: 80%;
+    }
+
+    button {
+      padding: 12px;
+      width: 150px;
+      border: none;
+      border-radius: 25px;
+      background-color: #0047AB;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #003080;
+    }
+
+    .image-section {
+      flex: 1;
+    }
+
+    .image-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Jadwal Kereta</h1>
+      <div class="menu-icon">&#9776;</div>
+    </header>
+
+    <div class="content">
+      <div class="form-section">
+        <form>
+          <label>Nama Kereta</label>
+          <input type="text" placeholder="Nama Kereta">
+
+          <label>Tujuan/rute</label>
+          <input type="text" placeholder="Tujuan/rute">
+
+          <label>Jam Berangkat</label>
+          <input type="time">
+
+          <label>Jam Tiba</label>
+          <input type="time">
+
+          <button type="submit">Simpan</button>
+        </form>
+      </div>
+
+      <div class="image-section">
+        <img src="Argo Lawu.jpeg" alt="Interior Kereta">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
